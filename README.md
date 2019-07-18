@@ -4,11 +4,11 @@ Simple Drive API es un servidor hecho en node.js que funciona como intermediario
 ### Version 1.0:
 -   GET de todas las imagenes
           
-            localhost:5000/images
+            localhost:3000/images
             
     -   GET de una imagen
     
-            localhost:5000/images/<name>
+            localhost:3000/<name>
 
 ### Funcionalidad por hacer
 -   Crear rama POST para una imagen
