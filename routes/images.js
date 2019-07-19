@@ -5,6 +5,7 @@ var request = require('request')
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
+  res.set('Access-Control-Allow-Origin', '*')
   http.get('http://localhost:5000/images', function(result) {
     if (result.statusCode === 200) {
       var rawData = ''
@@ -23,6 +24,7 @@ router.get('/', function(req, res, next) {
   })
 });
 router.get('/:img', function(req, res, next) {
+  res.set('Access-Control-Allow-Origin', '*')
   var img = req.params.img
   console.log(img)
   var options = {
